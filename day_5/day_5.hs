@@ -25,10 +25,9 @@ checkPairs i = let res = foldr isNicePair [False,True] i
 
 isNicePair :: [Char] -> [Bool] -> [Bool]
 isNicePair [] _ = [False, False]
-isNicePair [c1,c2] [True,True] = [True, (not (elem [c1,c2] naughtyChars))]
-isNicePair [_,_] [True,False] = [True, False]
-isNicePair [_,_] [False,False] = [False, False]
-isNicePair [c1,c2] [False,True] = [(c1 == c2), (not (elem [c1,c2] naughtyChars))]
+isNicePair _ [_,False] = [False, False]
+isNicePair [c1,c2] [b1,_] = if b1 == True then [True, (not (elem [c1,c2] naughtyChars))]
+                                          else [(c1 == c2), (not (elem [c1,c2] naughtyChars))]
 
 strToPair :: [Char] -> [String]
 strToPair = foldr addToPair []
@@ -36,5 +35,5 @@ strToPair = foldr addToPair []
 addToPair :: Char -> [[Char]] -> [[Char]]
 addToPair c [] = [[c]]
 addToPair c (x:xs) = if (length x) == 1
-                       then ((c:x) : xs)
-                       else ([c, (head x)] : x : xs)
+                       then (c:x) : xs
+                       else [c, (head x)] : x : xs
