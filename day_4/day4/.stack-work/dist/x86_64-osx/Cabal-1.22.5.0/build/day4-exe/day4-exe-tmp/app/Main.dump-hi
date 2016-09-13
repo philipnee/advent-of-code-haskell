@@ -1,0 +1,109 @@
+
+==================== FINAL INTERFACE ====================
+2016-09-13 19:19:58.13241 UTC
+
+interface main@main:Main 7103
+  interface hash: 308dd811d24cc0bcafcb459e689d2773
+  ABI hash: 11297295db6e66506459885fc5771773
+  export-list hash: 55d866a28e68c1837efb01feb25250f1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4672d1a879a9f20f8b6b81a3d5c0f66a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.hashing
+  Main.main
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      crypto-api-0.13.2@crypt_GAe4aPlSVmU85G1MLJlJcV
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      entropy-0.3.7@entro_7gYJ61Ci0NNBp8LB4CGmrG
+                      fail-4.9.0.0@fail_2xB1AvdW34sDm9N3JOe33G ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 pureMD5-2.1.3@pureM_5T9Io3zynb2A0FkLA6nQqE
+                      tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      unix-2.7.1.0@unix_KZL8h98IqDM57kQSPo1mKx
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         crypto-api-0.13.2@crypt_GAe4aPlSVmU85G1MLJlJcV:Crypto.Classes
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6:Data.Tagged
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Lazy.Char8 3455f4159ac4b644563dfc2b667ec7e5
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  pureMD5-2.1.3@pureM_5T9Io3zynb2A0FkLA6nQqE:Data.Digest.Pure.MD5 e8847f18c6c7a58e90eb24e71384af15
+9033cb3e642945102504b1f7771af18b
+  $whashing :: GHC.Prim.Int# -> GHC.Base.String -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+8b997e0359c912dc2138bbcfd8325f62
+  hashing :: GHC.Types.Int -> GHC.Base.String -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S,U(U)><S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Main.$whashing ww1 w1 of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 } }) -}
+1f1868be7926351e733430c7372ed97c
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+1a8b6a2496aa76ad45af0943d3d3439d
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   eta) -}
+ac479652ac99e406ef6afcd81bc6112f
+  main2 :: GHC.Base.String
+  {- Unfolding: (case Main.$whashing
+                        0
+                        (GHC.Types.[] @ GHC.Types.Char) of ww { DEFAULT ->
+                 case GHC.Show.$wshowSignedInt
+                        0
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } }) -}
+6e22fe7ede793fd567d3680bc9adaa1d
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
